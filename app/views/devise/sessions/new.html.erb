@@ -1,0 +1,41 @@
+<%= render "shared/header" %>
+
+<div class="sign">
+  <div class="sign-mein">
+    <div class="sign-logo">
+      <h2>ログイン</h2>
+    </div>
+    <div class="sign-form">
+      <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+      
+        <%= render "devise/shared/error_messages", model: f.object %>
+
+        <div class='login-flash-message'>
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email, "Email" %>
+          <%= f.email_field :email, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, "パスワード ６文字以上の英数字" %>
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me, "Emailとパスワードを記憶させますか？" %>
+          </div>
+        <% end %>
+
+        <div class="actions">
+          <%= f.submit "ログイン" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
