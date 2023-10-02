@@ -1,0 +1,32 @@
+header {
+  height: 72px;
+  width: 100vw;
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-wrapper {
+  height: 72px;
+  padding: 12px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.header-button {
+  display: inline-block;
+  width: 120px;
+  background-color: white;
+  margin-left: 12px;
+  padding: 8px 20px; 
+  line-height: 32px;
+  text-align: center;
+  border-radius: 4px;
+}

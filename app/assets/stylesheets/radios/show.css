@@ -1,0 +1,97 @@
+.show {
+  width: 100vw;
+  height: calc(100vh - 72px);
+  display: flex;
+}
+
+.side-bar {
+  width: 300px;
+  background-color: #ccc;
+}
+
+/* show-main */
+
+.show-main {
+  width: calc(100vw - 300px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* show-header */
+
+.radio-title {
+  font-size: 24px;
+}
+
+.messages {
+  height: calc(100vh - 72px - 48px);
+  overflow-y: scroll;
+  }
+
+.message {
+  height: 120px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.poster {
+  width: 240px;
+  text-align: center;
+
+}
+
+.poster img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.poster-name {
+  margin-top: 16px;
+}
+
+.poster-message {
+  width: calc(100% - 240px);
+}
+
+
+/* show-footer */
+
+.show-footer {
+  height: 72px;
+  width: 100%;
+  padding: 16px;
+  background-color: #888;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-form {
+  font-size: 16px;
+  width: calc(100% - 116px);
+  padding: 0 16px;
+  line-height: 40px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: white;
+  border-radius: 4px;
+  margin-left: 16px; 
+}
+
+.form-b{
+  display: block;
+  height: 40px;
+  width: 100px;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+}
