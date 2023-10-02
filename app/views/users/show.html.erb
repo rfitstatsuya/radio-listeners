@@ -1,0 +1,58 @@
+<%= render "shared/header" %>
+<div class="user-show">
+  <div class="user-information">
+    <div class="user-profile">
+      <div class="profile-image">
+        <%# <% if current_user.image == nil %>
+          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
+        <%# <% else %>
+          <%# <%= image_tag current_user.image, class: 'poster-img' %>
+        <%# <% end %>
+      </div>
+      <div class="profile-radio-name">
+        <%= current_user.radio_name %>
+      </div>
+      <div class="user-follows">
+        <div class="follow">
+          <p>フォロー</p>
+        </div>
+        <div class="user-follower">
+          <p>フォロワー</p>
+        </div>
+      </div>
+    </div>
+    <div class="user-self-intoroduction">
+      <% if current_user.profile == nil %>
+        <p>プロフィールが設定されていません</p>
+      <% else %>
+        <%= current_user.profile %>
+      <% end %>
+    </div>
+  </div>
+  <div class="user_content">
+    <div class="logo">
+      <h2>
+        <%= current_user.radio_name %>さんのお気に入りラジオ番組
+      </h2>
+    </div>
+    <div class="user-favorite-radios">
+      <div class="user-favorite-radio">
+        <div class="user-favorite-radio-title">
+          <p>お気に入り登録されたラジオ番組タイトル</p>
+        </div>
+      </div>
+    </div>
+    <div class="logo">
+      <h2>
+        <%= current_user.radio_name %>さんの日記一覧
+      </h2>
+    </div>
+    <div class="user-diarys">
+      <div class="user-diary">
+        <div class="user-diary-title">
+          <p>日記のタイトル</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
