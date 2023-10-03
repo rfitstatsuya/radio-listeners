@@ -7,7 +7,7 @@ class User < ApplicationRecord
         has_one_attached :image
 
         with_options presence: true do
-          validates :radio_name
+          validates :radio_name, length: { maximum: 7 }
           validates :password, on: :create
         end
       
