@@ -6,6 +6,7 @@
         <div class="headder-navi">
           <% if user_signed_in? %>
             <div class="headder-buttons signed-button">
+              <%= link_to "ユーザー情報編集", edit_user_registration_path(current_user.id), class: "header-button" %>
               <%= link_to "マイページ", user_path(current_user.id), class: "header-button" %>
               <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "header-button" %>
             </div>
