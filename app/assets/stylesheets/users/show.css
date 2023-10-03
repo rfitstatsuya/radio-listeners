@@ -1,0 +1,106 @@
+.user-show {
+  padding: 24px;
+  width: calc(100vw - 15px);
+  height: calc(100vh - 72px);
+}
+
+.user-information {
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  width: 600px;
+  height: 250px;
+  border-bottom: solid #ccc 2px;
+}
+
+.user-profile {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100px;
+  padding-top: 36px;
+  text-align: center;
+}
+
+.poster-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}  
+
+.profile-radio-name {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.user-follows {
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 0 12px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow {
+  width: 70px;
+  text-align: center;
+}
+
+.user-self-intoroduction {
+  padding: 36px 32px;
+  width: calc(600px - 48px - 200px);
+}
+
+/* user-content */
+
+.user_content {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.logo {
+  padding: 16px 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-favorite-radios {
+  height: 300px;
+  padding: 0px 16px;
+  border-bottom: solid #ccc 2px;
+  overflow-y: scroll;
+}
+
+.user-favorite-radio {
+  padding: 0px 16px;
+  margin-top: 16px;
+}
+
+.user-favorite-radio-title {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.user-diarys {
+  height: 300px;
+  margin-top: 16px;
+  padding: 0px 16px;
+  border-bottom: solid #ccc 2px;
+  overflow-y: scroll;
+}
+
+.user-diary {
+  padding: 0px 16px;
+  margin-top: 16px;
+}
+
+.user-diary-title {
+  margin-top: 12px;
+  font-size: 16px;
+}
