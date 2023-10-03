@@ -3,10 +3,10 @@
   <div class="user-information">
     <div class="user-profile">
       <div class="profile-image">
-        <% if @user.image == nil %>
-          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
-        <% else %>
+        <% if @user.image.present? %>
           <%= image_tag @user.image, class: 'poster-img' %>
+        <% else %>
+          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
         <% end %>
       </div>
       <div class="profile-radio-name">
