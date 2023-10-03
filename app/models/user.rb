@@ -12,9 +12,12 @@ class User < ApplicationRecord
         end
       
         validates :profile, length: { maximum: 140 }
+        validates :is_deleted, inclusion: [true, false]
 
         VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
         validates :password, format: { with: VALID_PASSWORD_REGEX }
+
+        # ユーザー情報編集のための記述
 
         def update_without_current_password(params, *options)
           if params[:password].blank? && params[:password_confirmation].blank?
@@ -25,5 +28,11 @@ class User < ApplicationRecord
           result = update(params, *options)
           clean_up_passwords
           result
+        end
+
+        # ユーザー情報削除のための記述
+
+        def active_for_authentication?
+          super && (is_deleted == false)
         end
 end
