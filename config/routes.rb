@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   root to: 'radios#index'
   resources :radios, only: :index
   resources :users, only: [:show, :edit, :update]
+    # 退会確認画面
+    get '/users/:id/unsubscribe' => 'users#unsubscribe', as: 'unsubscribe'
+    # 論理削除用のルーティング
+    patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
 end
