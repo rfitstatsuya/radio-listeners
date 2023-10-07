@@ -15,37 +15,12 @@
 }
 
 .radio-choice {
-  margin-top: 60px;
-}
-
-.radio-choice h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.radio-choice p {
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-
-.choice-nav {
-  width: 400px;
-  margin: 12px auto 0;
+  margin: 60px auto 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-.nav {
-  display: block;
-  margin-top: 12px;
-}
-
-.choice-button {
-  margin-top: 12px;
-  display: block;
+.radio-chatroom-button {  
   line-height: 32px;
   width: 240px;
   background-color: #ccc;
