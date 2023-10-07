@@ -1,15 +1,28 @@
 class RadiosController < ApplicationController
+before_action :existing_radio_seach, only: :create
+
   def index
-    
+    @radios = Radio.all
   end
 
   def new
-    if user_signed_in?
-      @categories = Category.new
-      @maincategories = Category.all.order("id ASC").limit(8)
+    @radio = Radio.new
+    @maincategories = Category.all.order("id ASC").limit(8)
+  end
+
+  def create
+    @radio = Radio.new(radio_params)
+    @radio.temp_ancestry = params[:radio][:ancestry]
+    if @radio.save
+      redirect_to radio_path(@radio.id)
     else
-      redirect_to new_user_session_path
+      @maincategories = Category.all.order("id ASC").limit(8)
+      render :new
     end
+  end
+
+  def show
+    @radio = Radio.find(params[:id])
   end
 
   def search
@@ -18,4 +31,22 @@ class RadiosController < ApplicationController
     render json:{ item: children_item }
   end
   
+  private
+
+  def existing_radio_seach
+    # 送信された category_id を取得
+    submitted_category_id = params[:radio][:category_id]
+
+    # 既存の Radios レコードから同じ category_id を持つものを検索
+    existing_radio = Radio.find_by(category_id: submitted_category_id)
+
+    if existing_radio.present?
+      # 既存のレコードが見つかった場合、その詳細ページにリダイレクト
+      redirect_to radio_path(existing_radio.id)
+    end
+  end
+
+  def radio_params
+    params.require(:radio).permit(:category_id)
+  end
 end
