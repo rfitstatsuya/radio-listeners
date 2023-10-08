@@ -1,5 +1,6 @@
 class RadiosController < ApplicationController
 before_action :existing_radio_seach, only: :create
+before_action :authenticate_user!, only: [:new, :create, :show]
 
   def index
     @radios = Radio.all
