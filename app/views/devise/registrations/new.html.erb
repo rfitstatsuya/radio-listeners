@@ -11,7 +11,7 @@
         <%= render "devise/shared/error_messages", model: f.object  %>
 
         <div class="field">
-          <%= f.label :image, "プロフィール画像" %><br/>
+          <%= f.label :image, "プロフィール画像(任意)" %><br/>
           <%= f.file_field :image %>
         </div>
 
@@ -36,7 +36,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :profile, "プロフィール　入力は任意です" %>
+          <%= f.label :profile, "プロフィール(任意)" %>
           <%= f.text_field :profile %>
         </div>
 
@@ -45,6 +45,9 @@
           <%= f.submit "新規登録" %>
         </div>
       <% end %>
+    </div>
+    <div class="new_transition">
+      <%= link_to "ログインはこちら", new_user_session_path, class: "new_transition-button" %>
     </div>
   </div>
 </div>

@@ -57,3 +57,16 @@
   cursor: pointer;
   background: #f0c14b;
 }
+
+.new_transition {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.new_transition-button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #f0c14b;
+  border-radius: 4px;
+}
