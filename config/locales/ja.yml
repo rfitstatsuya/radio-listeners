@@ -3,7 +3,6 @@ ja:
     attributes:
       user:
         radio_name: ラジオネーム
-ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
