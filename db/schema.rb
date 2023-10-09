@@ -47,7 +47,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_08_074636) do
   end
 
   create_table "messages", charset: "utf8", force: :cascade do |t|
-    t.string "content", null: false
+    t.text "content", null: false
     t.bigint "radio_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
