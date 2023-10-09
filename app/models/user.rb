@@ -8,7 +8,7 @@ class User < ApplicationRecord
         has_many :messages
 
         with_options presence: true do
-          validates :radio_name, length: { maximum: 7 }
+          validates :radio_name, length: { maximum: 7 }, uniqueness: true
           validates :password, on: :create
         end
       
