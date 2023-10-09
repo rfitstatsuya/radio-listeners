@@ -11,6 +11,7 @@
       </div>
     </div>
     <div class="messages">
+      <%= flash[:notice] %>
       <% @messages.each do |message| %>
       <div class="message">
         <div class="poster">
@@ -20,9 +21,16 @@
           </p>
         </div>
         <div class="message-content-wrapper">
-          <div class="message-date">
-            <%= l message.created_at %>
-          </div>  
+          <div class="message-detail">
+            <div class="message-date">
+              <%= l message.created_at %>
+            </div>
+            <div class="message-destroy">
+              <% if user_signed_in? && current_user.id == message.user_id %>
+                <%= link_to "削除",  radio_message_path(@radio, message.id), data: { turbo_method: :delete } %>
+              <% end %>
+            </div>  
+          </div>
           <div class="message-content">
               <%= message.content %>
           </div>
