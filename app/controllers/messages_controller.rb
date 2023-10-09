@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @radio = Radio.find(params[:radio_id])
     @message = Message.new
