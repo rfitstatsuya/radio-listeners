@@ -1,5 +1,5 @@
-.show {
-  width: 100vw;
+.message-index {
+  width: calc(100vw - 15px);
   height: calc(100vh - 72px);
   display: flex;
 }
@@ -9,9 +9,9 @@
   background-color: #ccc;
 }
 
-/* show-main */
+/* message-index-main */
 
-.show-main {
+.message-index-main {
   width: calc(100vw - 300px);
   padding: 16px;
   display: flex;
@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 
-/* show-header */
+/* message-index-header */
 
 .radio-title {
   font-size: 24px;
@@ -27,16 +27,19 @@
 
 .messages {
   height: calc(100vh - 72px - 48px);
+  width: 100%;
   overflow-y: scroll;
   }
 
 .message {
-  height: 120px;
+  width: 100%;
+  height: 135px;
   padding: 16px;
   margin: 16px 0;
   display: flex;
   background-color: #eee;
   border-radius: 4px;
+  overflow: scroll;
 }
 
 .poster {
@@ -55,14 +58,23 @@
   margin-top: 16px;
 }
 
-.poster-message {
-  width: calc(100% - 240px);
+.message-content-wrapper {
+  width: 100%;
+}
+
+.message-date {
+  font-size: 14px;
+}
+
+.message-content {
+  width: 100%;
+  margin-top: 12px;
 }
 
 
-/* show-footer */
+/* message-index-footer */
 
-.show-footer {
+.message-index-footer {
   height: 72px;
   width: 100%;
   padding: 16px;
@@ -72,9 +84,13 @@
   justify-content: space-between;
 }
 
+.form-input {
+  width: 100%;
+}
+
 .message-form {
   font-size: 16px;
-  width: calc(100% - 116px);
+  width: 100%;
   padding: 0 16px;
   line-height: 40px;
   background-color: #eee;
