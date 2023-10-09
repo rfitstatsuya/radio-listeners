@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root to: 'radios#index'
 
   resources :radios, only: [:index, :new, :create] do
-    resources :messages, only: [:index, :create]
+    resources :messages, only: [:index, :create, :destroy]
   end
   get '/category/:id', to: 'radios#search'
 
