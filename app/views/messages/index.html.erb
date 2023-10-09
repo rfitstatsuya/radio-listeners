@@ -1,0 +1,52 @@
+<%= render "shared/header" %>
+
+<div class="message-index">
+  <div class="side-bar">
+    <%= render "shared/side_bar" %>
+  </div>
+  <div class="message-index-main">
+    <div class="message-index-header">
+      <div class="radio-title">
+        <h2><%= @radio.category.name %></h2>
+      </div>
+    </div>
+    <div class="messages">
+      <%= flash[:notice] %>
+      <% @messages.each do |message| %>
+      <div class="message">
+        <div class="poster">
+          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
+          <p class="poster-name">
+          <%= message.user.radio_name %>
+          </p>
+        </div>
+        <div class="message-content-wrapper">
+          <div class="message-detail">
+            <div class="message-date">
+              <%= l message.created_at %>
+            </div>
+            <div class="message-destroy">
+              <% if user_signed_in? && current_user.id == message.user_id %>
+                <%= link_to "削除",  radio_message_path(@radio, message.id), data: { turbo_method: :delete } %>
+              <% end %>
+            </div>  
+          </div>
+          <div class="message-content">
+              <%= message.content %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="message-index-footer">
+      <div class="form-input">
+      <%= form_with model: [@radio, @message], local: true do |f| %>
+        <%= f.text_field :content, class: 'message-form', placeholder: 'コメントを書く' %>
+      </div>
+      <div class="form-button">
+        <%= f.submit '送信', class: 'form-b' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
