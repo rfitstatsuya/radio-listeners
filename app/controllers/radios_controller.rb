@@ -15,15 +15,11 @@ before_action :authenticate_user!, only: [:new, :create, :show]
     @radio = Radio.new(radio_params)
     @radio.temp_ancestry = params[:radio][:ancestry]
     if @radio.save
-      redirect_to radio_path(@radio.id)
+      redirect_to radio_messages_path(@radio.id)
     else
       @maincategories = Category.all.order("id ASC").limit(8)
       render :new
     end
-  end
-
-  def show
-    @radio = Radio.find(params[:id])
   end
 
   def search
@@ -43,7 +39,7 @@ before_action :authenticate_user!, only: [:new, :create, :show]
 
     if existing_radio.present?
       # 既存のレコードが見つかった場合、その詳細ページにリダイレクト
-      redirect_to radio_path(existing_radio.id)
+      redirect_to radio_messages_path(existing_radio.id)
     end
   end
 
