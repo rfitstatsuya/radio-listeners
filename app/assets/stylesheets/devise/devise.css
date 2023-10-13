@@ -1,11 +1,24 @@
-.sign-mein {
-  width: 350px;
-  height: 500px;
-  margin: 60px auto 0;
-  padding: 16px;
-  border-radius: 4px;
-  border: 1px #ddd solid;  
+.sign {
+  height: calc(100vh - 180px - 120px);
+  margin-top: 48px;
 }
+
+.sign-mein {
+  width: 600px;
+  margin: 0 100px 24px auto;
+  padding: 32px 90px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.95);
+}
+
+.sign-in-mein {
+  width: 600px;
+  margin: 0 100px 0 auto;
+  padding: 32px 90px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.95);
+}
+
 
 .sign-logo {
   text-align: center;
@@ -40,33 +53,94 @@
 }
 
 .actions {
-  margin-top: 16px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .actions input[type="submit"] {
   border-style: none;
-  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  width: 60%;
   height: 31px;
-  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+  background: orange;
   border-radius: 3px;
-  border: 1px #a88734 solid;
+  border: 1px #ccc solid;
+  opacity: 0.6;
 }
 
 .actions input[type="submit"]:hover {
   cursor: pointer;
-  background: #f0c14b;
+  opacity: 1;
 }
 
-.new_transition {
-  margin-top: 36px;
+.new-transition {
+  margin-top: 24px;
   text-align: center;
 }
 
-.new_transition-button {
+.new-transition-button {
+  margin: 12px auto 0;
   display: block;
-  width: 100%;
-  padding: 8px 16px;
-  background-color: #f0c14b;
-  border-radius: 4px;
+  border-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  width: 60%;
+  height: 31px;
+  line-height: 31px;
+  background: orange;
+  border-radius: 3px;
+  border: 1px #ccc solid;
+  opacity: 0.6;
+
+}
+
+.new-transition-button:hover {
+  cursor: pointer;
+  opacity: 1;  
+}
+
+/* unsubscribe */
+
+.unsubscribe-mein {
+  width: 600px;
+  margin: 0 100px 0 auto;
+  padding: 32px 90px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.95);
+}
+
+.unsubscribe-logo {
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.unsubscribe-link {
+  width: 80%;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unsubscribe-link-button {
+  text-align: center;
+  margin: 12px auto 0;
+  display: block;
+  border-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  width: 150px;
+  height: 31px;
+  line-height: 31px;
+  background: orange;
+  border-radius: 3px;
+  border: 1px #ccc solid;
+  opacity: 0.6;
+}
+
+.unsubscribe-link-button:hover {
+  cursor: pointer;
+  opacity: 1;  
 }

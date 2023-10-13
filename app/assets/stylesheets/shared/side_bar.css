@@ -1,6 +1,8 @@
 .side-bar {
   padding: 20px 25px;
   height: 100%;
+  /* border-right: 1px solid #ccc; */
+
 }
 
 .side-bar-title {
@@ -14,6 +16,7 @@
   height: calc(100vh - 72px - 72px);
   width: 265px;
   overflow-y: scroll;
+  
 }
 
 .favorite-radio {
