@@ -1,7 +1,7 @@
 .message-index {
-  margin: 48px 32px 0;
+  margin: 16px 32px 0 32px;
   width: calc(100vw - 64px);
-  height: calc(100% - 72px);
+  height: calc(100% - 16px);
   background-color: rgba(255,255,255,0.95);
   border-radius: 15px;
   display: flex;
@@ -30,7 +30,7 @@
 }
 
 .messages {
-  height: calc(100vh - 72px - 48px);
+  height: 100%;
   width: 100%;
   overflow-y: scroll;
   }

@@ -11,11 +11,14 @@
       </div>
     </div>
     <div class="messages">
-      <%= flash[:notice] %>
       <% @messages.each do |message| %>
       <div class="message">
         <div class="poster">
-          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
+          <% if message.user.image.present? %>
+            <%= image_tag message.user.image, class: 'poster-img' %>
+          <% else %>
+            <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "poster-img" %>
+          <% end %>
           <p class="poster-name">
           <%= message.user.radio_name %>
           </p>
