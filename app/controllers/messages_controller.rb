@@ -23,7 +23,7 @@ class MessagesController < ApplicationController
     @message = @radio.messages.find(params[:id])
     if current_user.id == @message.user.id
       @message.destroy
-      flash[:notice] = 'コメントを削除しました'
+      flash.now[:notice] = 'コメントを削除しました'
       redirect_to radio_messages_path(@radio)
     else
       @messages = @room.messages.includes(:user)
