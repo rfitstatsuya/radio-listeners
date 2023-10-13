@@ -16,22 +16,22 @@
         </div>
 
         <div class="field">
-          <%= f.label :radio_name, "ラジオネーム" %><br />
+          <%= f.label :radio_name, "ラジオネーム(必須)" %><br />
           <%= f.text_field :radio_name, autofocus: true %>
         </div>
 
         <div class="field">
-          <%= f.label :email, "Email" %>
+          <%= f.label :email, "Email(必須)" %>
           <%= f.email_field :email, autocomplete: "email" %>
         </div>
 
         <div class="field">
-          <%= f.label :password, "パスワード ６文字以上の英数字" %>
+          <%= f.label :password, "パスワード(必須)６文字以上の英数字" %>
           <%= f.password_field :password, autocomplete: "new-password" %>
         </div>
 
         <div class="field">
-          <%= f.label :password_confirmation, "パスワード 確認" %><br />
+          <%= f.label :password_confirmation, "パスワード確認用(必須)" %><br />
           <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
 
@@ -46,8 +46,11 @@
         </div>
       <% end %>
     </div>
-    <div class="new_transition">
-      <%= link_to "ログインはこちら", new_user_session_path, class: "new_transition-button" %>
+    <div class="new-transition">
+      <div class="new-transition-logo">
+        新規登録済みの方はこちらから
+      </div>
+      <%= link_to "ログイン", new_user_session_path, class: "new-transition-button" %>
     </div>
   </div>
 </div>

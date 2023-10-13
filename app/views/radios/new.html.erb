@@ -1,15 +1,19 @@
 <%= render "shared/header" %>
 
 <%= form_with model: @radio, data: { turbo: false }, local: true do |f| %>
-  <div>
-      <p>
-        地域・放送局・曜日・ラジオ番組を選択してください
-      </p>
+  <div class="radio-new-mein">
+    <h2>
+      カテゴリーを選択してラジオ番組の<br>
+      チャットルームを探そう！
+    </h2>
     <div id="select-wrap">
       <%= f.collection_select :category_id, @maincategories, :id, :name, {include_blank: "放送地域を選択してください"}, {id: "parent-category" } %>
     </div>
+    <p class="radio-room-submit">
+      選択されたラジオ番組のチャットルームに行きますか？
+    </p>
     <%= f.hidden_field :category_id, id: 'selected-category-id' %>
     <%= f.hidden_field :ancestry, id: 'selected-ancestry' %>
-    <%= f.submit "このラジオルームにいく", id: "radio-room-button"  %>
+    <%= f.submit "チャットルームにいく", id: "radio-room-button"  %>
   </div>
 <% end %>

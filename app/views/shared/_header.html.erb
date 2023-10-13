@@ -6,11 +6,9 @@
         <div class="headder-navi">
           <% if user_signed_in? %>
             <div class="headder-buttons signed-button">
-              <%= link_to "退会",  unsubscribe_path(current_user.id), class: "header-button" %>
-              <%= link_to "ユーザー情報編集", edit_user_registration_path(current_user.id), class: "header-button" %>
               <%= link_to "マイページ", user_path(current_user.id), class: "header-button" %>
               <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "header-button" %>
-            </div>
+              <%= link_to "退会する",  unsubscribe_path(current_user.id), class: "header-button" %>            </div>
           <% else %>
             <div class="headder-buttons">
               <%= link_to "ログイン", new_user_session_path, class: "header-button" %>

@@ -1,7 +1,7 @@
 <%= render "shared/header" %>
 
 <div class="sign">
-  <div class="sign-mein">
+  <div class="sign-in-mein">
     <div class="sign-logo">
       <h2>ログイン</h2>
     </div>
@@ -37,8 +37,11 @@
         </div>
       <% end %>
     </div>
-    <div class="new_transition">
-      <%= link_to "新規登録はこちら", new_user_registration_path, class: "new_transition-button" %>
+    <div class="new-transition">
+      <div class="new-transition-logo">
+        新規登録の方はこちらから
+      </div>
+      <%= link_to "新規登録", new_user_registration_path, class: "new-transition-button" %>
     </div>
   </div>
 </div>

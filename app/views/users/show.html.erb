@@ -1,4 +1,5 @@
 <%= render "shared/header" %>
+
 <div class="user-show">
   <div class="user-information">
     <div class="user-profile">
@@ -19,6 +20,9 @@
         <div class="user-follower">
           <p>フォロワー</p>
         </div>
+      </div>
+      <div class="edit-user">
+        <%= link_to "ユーザー情報編集", edit_user_registration_path(current_user.id), class: "heder-button" %>
       </div>
     </div>
     <div class="user-self-intoroduction">
