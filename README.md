@@ -52,10 +52,10 @@ https://docs.google.com/spreadsheets/d/1GJPFVDyyxUcFllxv0l4xoX5LRqB9fFdHFY3LtL09
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/cb34f9ee6a442975c5f4640ddcc5c927.png)](https://gyazo.com/cb34f9ee6a442975c5f4640ddcc5c927)
 # 開発環境
-* RubyOnRails
+* Ruby on Rails
 * HTML
 * CSS
-* Javascript
+* JavaScript
 # ローカルでの動作方法
 以下のコマンドを順に実行<br>
 % git clone https://github.com/rfitstatsuya/radio-listeners.git<br>
@@ -63,7 +63,7 @@ https://docs.google.com/spreadsheets/d/1GJPFVDyyxUcFllxv0l4xoX5LRqB9fFdHFY3LtL09
 % bundle install<br>
 % yam install
 # 工夫したポイント
-ラジオ番組ごとに遷移するという点を工夫しました。ラジオ番組名を指定する必要があったため、anecetryというgemを使用して階層カテゴリーを制作しました。そのカテゴリーとチャットルームを紐づけて実装しました。
+ラジオ番組ごとに遷移するという点を工夫しました。ラジオ番組名を指定する必要があったため、anecetryというgemを使用して階層カテゴリーを制作しました。そして、そのカテゴリーとチャットルームを紐づけて実装しました。
 # 改善点
 メッセージの送受信を非同期通信にする
 # 制作時間
