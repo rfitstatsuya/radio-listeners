@@ -33,33 +33,34 @@ https://docs.google.com/spreadsheets/d/1GJPFVDyyxUcFllxv0l4xoX5LRqB9fFdHFY3LtL09
 ## ユーザー管理機能
 
 ### 新規登録
-[![Image from Gyazo](https://i.gyazo.com/ca0ea1eb6870cec05227238eaf9f077a.gif)](https://gyazo.com/ca0ea1eb6870cec05227238eaf9f077a)
+![ca0ea1eb6870cec05227238eaf9f077a (2)](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/c3055571-c011-461c-b62a-7f889d98549f)
 
 ### ログイン
-[![Image from Gyazo](https://i.gyazo.com/0c20db99e31d25552a4f49a850128522.gif)](https://gyazo.com/0c20db99e31d25552a4f49a850128522)
+![0c20db99e31d25552a4f49a850128522 (1) (1)](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/f1bdbe1b-6c71-449e-b8aa-cccc04376747)
 
 ### ログアウト
-[![Image from Gyazo](https://i.gyazo.com/b4f04a36c5a5da071f6b3ffbedf73457.gif)](https://gyazo.com/b4f04a36c5a5da071f6b3ffbedf73457)
+![b4f04a36c5a5da071f6b3ffbedf73457](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/46fd87c7-d226-4b1d-bb19-3d7e249d466f)
 
 ### ユーザー情報編集
-[![Image from Gyazo](https://i.gyazo.com/49046116c4eecd0713f0587cb1d1bbcb.gif)](https://gyazo.com/49046116c4eecd0713f0587cb1d1bbcb)
+![cf03f84f3dd630815f77eb141a9b1356](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/23eae60d-4eee-4ec6-9f43-5dc5f247eae1)
 
 ### マイページ
-[![Image from Gyazo](https://i.gyazo.com/96b5b3bbcc4a80fbd4cf3f024b4a7cac.gif)](https://gyazo.com/96b5b3bbcc4a80fbd4cf3f024b4a7cac)
+![96b5b3bbcc4a80fbd4cf3f024b4a7cac](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/829841cb-b3f2-4fd3-9153-92adb9adbe87)
 
 ### 退会
-[![Image from Gyazo](https://i.gyazo.com/f022324bc57ed9061ea841d8d0757306.gif)](https://gyazo.com/f022324bc57ed9061ea841d8d0757306)
+![f022324bc57ed9061ea841d8d0757306](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/a8d235b3-7948-44df-88b4-60c0bd1d41fb)
 
 ## チャットルーム機能
 
 ### ラジオ番組のチャットルームを探し、チャットができる
-[![Image from Gyazo](https://i.gyazo.com/c8ec9c16c3c1532163237ca9702ce295.gif)](https://gyazo.com/c8ec9c16c3c1532163237ca9702ce295)
+![c8ec9c16c3c1532163237ca9702ce295-min](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/efc52a77-cc86-4cc7-aedb-c92eb0012c6a)
 
-[![Image from Gyazo](https://i.gyazo.com/dc78ff33b6dff0af0aa72e28b2501c3f.gif)](https://gyazo.com/dc78ff33b6dff0af0aa72e28b2501c3f)
+![dc78ff33b6dff0af0aa72e28b2501c3f-min-min](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/8c093173-6576-4ef6-a1dc-40ad8a964f16)
 
-[![Image from Gyazo](https://i.gyazo.com/177bcfaaf0483643261a7f6f7f183ee0.gif)](https://gyazo.com/177bcfaaf0483643261a7f6f7f183ee0)
+![177bcfaaf0483643261a7f6f7f183ee0](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/81a6b1a5-cf51-479a-a83d-09c7b642be8b)
 
-[![Image from Gyazo](https://i.gyazo.com/a97fa6a2d0ab340c383d97c8bdeeb099.gif)](https://gyazo.com/a97fa6a2d0ab340c383d97c8bdeeb099)
+![a97fa6a2d0ab340c383d97c8bdeeb099](https://github.com/rfitstatsuya/radio-listeners/assets/142726441/ccd566bc-2f00-4837-b361-eab6056bca95)
+
 
 # 実装予定の機能
 * ラジオ番組のカテゴリーの追加
